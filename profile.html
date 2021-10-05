@@ -1,0 +1,60 @@
+<header><a href="main_page.html">на главную</a></header>
+<footer>назад</footer>
+<div>
+    password:
+<input type="password" value="enter password" name="password" id="password"/>
+
+</div>
+<div>
+    login:
+<input type="text" value="enter login" id="login"/>
+
+</div>
+<label><input type="button" value="submit" id="submit"/></label>
+<!--<table border="1">
+    <tr>
+        <td>ячейка1</td>
+        <td>ячека2</td>
+    </tr>
+    <tr>
+        <td>ячейка3</td>
+    </tr>
+    <tr>
+        <td>ячейка4</td>
+        <td>ячейка5</td>
+    </tr>
+</table>-->
+<audio src="https://zvukipro.com/uploads/files/2017-09/1504526458_zvuki-prirody-penie-solovya.mp3"></audio>
+<button>Play audio</button>
+<script>
+    var click=document.getElementById("submit");
+    click.addEventListener('click',onclick);
+  function onclick(){
+    window.location.href="navigation.html";}
+    
+
+/*const piano=document.querySelector('.piano');
+const pianoKeys=document.querySelectorAll('.piano-key');*/
+const audio=document.querySelector('audio');
+const button=document.querySelector('button');
+
+//pianoKeys.addEventListener('mouseup',playAudio);
+/*function playAudio(event){
+audio.currentTime=0;
+audio.play();
+}
+button.addEventListener('click',playAudio)
+
+window.addEventListener('keydown',(event)=>{
+if(event.code==='Space'){
+    playAudio();
+}
+})*/
+button.addEventListener('click',func);
+function func(){
+    if(event.altKey){
+        window.alert('click')
+    }
+}
+
+</script>
