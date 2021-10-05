@@ -1,0 +1,112 @@
+
+
+    <!--<html>
+    <body class="page" id="page">
+    <link  rel="stylesheet" type="text/css" href="style.css"/>
+
+<h1 align="center">WELCOME TO MY PROFILE</h1>
+<p>
+    <span>
+        Learn Js, html, css
+    </span>
+</p>
+
+   <a  href="profile.html"> back</a>
+   <img src="js.jpg"/>
+   <form name="size">
+       <select name="phone">
+    
+    <option selected  value="green"  >green</option>
+    <option  value="red" >red</option>
+    <option value="violet"  >violet</option>
+    <option value="blue"  >blue</option>
+   </select>
+   <button type="submit" id="submit" value="submit" onClick="onSubmit();"></button>
+   </form>
+</body>
+<script language="JavaScript">
+     
+
+function onSubmit(){var page=document.getElementById('page');
+   var nSelectedIndex=document.size.phone.selectedIndex;
+   var background1=document.size.phone.options[nSelectedIndex].value;
+   page.stytle.background=(background1);}
+   
+
+   
+
+</script>
+<style>
+.page{background-color: chartreuse;}
+.page1{background-color: crimson;}
+.page2{background-color: violet;}
+.page3{background-color: turquoise;}
+</style>
+    </html>-->
+   <!DOCTYPE html>
+    <html>
+        <body id="page">
+            <form name="list1">
+               <select name="selection"> 
+                   <option selected value="http://www.yandex.ru">yandex </option>
+                <option  value="http://google.ru">google</option>
+                <option  value="rambler.ru">rambler</option>
+               </select>
+               <input type="button" value="submit" onClick="onSubmit();">
+
+            </form>
+            <form name="styles">
+                <input type="radio" name="red" id="red" value="yellow">yellow
+                <input type="radio" name="color" value="green">green
+                <input type="radio" name="color" value="red">red
+                <input type="button" value="sub" onClick="complete();">
+            </form>
+            <canvas id="canvas"></canvas>
+        </body>
+    </html>
+    <script>
+        function onSubmit(){
+            var nSelectedIndex=document.list1.selection.selectedIndex;
+            var sgh=document.list1.selection.options[nSelectedIndex].value;
+            window.location=sgh;
+        }
+        function complete(){var page=document.getElementById("page");
+        var redColor=document.getElementById("red");
+        if(document.styles.red.checked){
+
+        
+            
+            page.style.background="red";}}
+
+            
+            var canv = document.getElementById('canvas'); 
+            var context=canv.getContext('2d');
+
+            /*if(canvas.getContext){
+              var  context = canvas.getContext("2d");
+            
+             
+            context.beginPath();
+            
+            context.arc(100,100,50,0,Math.PI*2,false);
+            context.closePath();
+            context.stroke();
+            context.beginPath();
+    
+            context.arc(220,90,60,0,Math.PI*2,false);
+            context.closePath();
+            context.stroke();
+            context.beginPath();
+            context.arc(360,160,80,0,Math.PI*3/2,false);
+            context.closePath();
+            context.stroke();}*/
+    
+
+context.fillRect =(50,50,300,200);
+
+        
+        
+        
+    
+        
+    </script>
